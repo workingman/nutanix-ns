@@ -1,0 +1,20 @@
+name: Create PR in UAT
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  Run-Salto-Deployment:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:             
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      
+      - name: Save Deployment ID in PR comments
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GWR_GH_TOKEN }}
+        run: |
+          gh pr create -B UAT 
+
