@@ -35,16 +35,15 @@ jobs:
           MATRIX_CONTEXT: ${{ toJson(matrix) }}
         run: echo "$MATRIX_CONTEXT"
 
-  Create-PR-UAT:
+  Run-Salto-Deployment:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:             
       - name: Checkout repo
         uses: actions/checkout@v3
       
-      - name: Create PR
+      - name: Save Deployment ID in PR comments
         env: 
           GITHUB_TOKEN: ${{ secrets.GWR_GH_TOKEN }}
         run: |
-          gh pr create -B UAT --title "${{github.head_ref}}" --body "gwr pr body"
-
+          gh pr create -B "${{github.head_ref}}" --title "${{github.head_ref}}" --body "_"
