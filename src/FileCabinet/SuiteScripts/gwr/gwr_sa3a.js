@@ -2,6 +2,7 @@
  * @NApiVersion 2.1
  * @NScriptType Suitelet
  */
+// km code 20231117-010031
 define(['N/log'],
     /**
  * @param{log} log
