@@ -3,7 +3,7 @@
  * @NScriptType Suitelet
  */
 define(['N/record', 'N/search'],
-
+// code changes by knuckles 20231117-111709
 // 20231031-133953
 // 20231101-104040
 // 20231107-215316 km
