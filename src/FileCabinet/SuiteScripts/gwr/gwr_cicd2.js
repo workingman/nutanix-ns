@@ -13,7 +13,10 @@ define(['N/record', 'N/search'],
  * @param{search} search
  */
     (record, search) => {
-// GR code 20231117-101601 knuckles change
+
+// GR code 20231117-101601
+// more GR code 20231117-111752
+
         /**
          * Defines the Suitelet script trigger point.
          * @param {Object} scriptContext
