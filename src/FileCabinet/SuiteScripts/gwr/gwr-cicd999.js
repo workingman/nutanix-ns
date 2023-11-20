@@ -1,5 +1,3 @@
-// 20231120-103134
-// 20231120-104324
 /**
  * @NApiVersion 2.1
  * @NScriptType Suitelet
@@ -9,6 +7,9 @@ define(['N/record', 'N/search']
  * @param{record} record
  * @param{search} search
  */
+       // 20231120-103134
+       // 20231120-104324
+       
     (record, search) => {
         /**
          * Defines the Suitelet script trigger point.
