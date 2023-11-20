@@ -2,15 +2,17 @@
  * @NApiVersion 2.1
  * @NScriptType Suitelet
  */
-define(['N/record', 'N/search']       
+define(['N/record', 'N/search'],
+
+       
+       
 /*     
  * @param{record} record
  * @param{search} search
  */
-       // 20231120-103134
-       // 20231120-104324
-       
     (record, search) => {
+
+
         /**
          * Defines the Suitelet script trigger point.
          * @param {Object} scriptContext
@@ -18,7 +20,8 @@ define(['N/record', 'N/search']
          * @param {ServerResponse} scriptContext.response - Suitelet response
          * @since 2015.2
          */
-        const onRequest = (scriptContext) => {}
+        const onRequest = (scriptContext) => { // more code from geoff
+        }
 
         return {onRequest}
 
