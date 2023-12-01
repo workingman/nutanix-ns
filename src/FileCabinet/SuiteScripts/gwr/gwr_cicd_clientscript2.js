@@ -4,11 +4,6 @@
  * @NModuleScope SameAccount
  */
 
-// gwr 20231121-103343
-// 20231121-103834
-// 20231121-104726
-
-// 20231121-105314
 define(['N/record', 'N/search'],
 /**
  * @param{record} record
@@ -33,5 +28,6 @@ function(record, search) {
     return {
         pageInit: pageInit,
     };
+    // 20231130-180905
     
 });
