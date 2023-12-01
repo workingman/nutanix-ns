@@ -9,6 +9,7 @@ define(['N/record', 'N/search'],
  * @param{record} record
  * @param{search} search
  */
+// non-conflicting line GR 20231201-100259
 function(record, search) {
     
     /**
