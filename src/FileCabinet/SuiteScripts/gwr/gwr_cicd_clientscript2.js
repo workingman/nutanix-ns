@@ -24,6 +24,7 @@ function(record, search) {
         alert("Bonjour tout la monde")
 
     }
+    // non conflicting code 20231201-094502
 
     // KGR test 12/01/2023 Update for BIZAPP-0002 non conflict
 
@@ -35,5 +36,4 @@ function(record, search) {
     // 20231130-181935
     // 20231130-182155
     // KGR test 12/01/2023 Update for BIZAPP-0002 conflict
-    
 });
