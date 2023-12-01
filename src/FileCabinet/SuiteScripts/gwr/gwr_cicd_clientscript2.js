@@ -9,6 +9,7 @@ define(['N/record', 'N/search'],
  * @param{record} record
  * @param{search} search
  */
+// non-conflicting line GR 20231201-100259
 function(record, search) {
     
     /**
@@ -35,5 +36,5 @@ function(record, search) {
     // 20231130-175636
     // 20231130-181935
     // 20231130-182155
-    // KGR test 12/01/2023 Update for BIZAPP-0002 conflict
+    // KGR test 12/01/2023 Update for BIZAPP-0002 conflict GR
 });
