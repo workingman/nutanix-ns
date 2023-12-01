@@ -25,12 +25,15 @@ function(record, search) {
 
     }
 
+    // KGR test 12/01/2023 Update for BIZAPP-0002 non conflict
+
+
     return {
         pageInit: pageInit,
     };
     // 20231130-175636
     // 20231130-181935
     // 20231130-182155
-    // KGR test 12/01/2023
+    // KGR test 12/01/2023 Update for BIZAPP-0002 conflict
     
 });
