@@ -4,10 +4,12 @@
  * @NModuleScope SameAccount
  */
 
+
 define(['N/record', 'N/search'], 
 /**
  * @param{record} record
  * @param{search} search  
+
  */
 function(record, search) { // adb
     // 20231201-092345
