@@ -11,8 +11,8 @@ define(['N/record', 'N/search'],
  * @param{search} search  
 
  */
-function(record, search) { // adb
-    // 20231201-092345
+function(record, search) { 
+    // 20231201-092345 km conflict 20231204-100115
     
     /**
      * Function to be executed after page is initialized.
@@ -31,5 +31,5 @@ function(record, search) { // adb
     return {
         pageInit: pageInit,
     };
-    
+    // km non conflicting 1 20231204-100134
 });
