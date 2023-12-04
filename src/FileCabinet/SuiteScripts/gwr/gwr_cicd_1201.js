@@ -4,9 +4,11 @@
  * @NModuleScope SameAccount
  */
 
+// 20231204-083523
+
 define(['N/record', 'N/search'],
 /**
- * @param{record} record
+ * @param{record} record // conflicting change km
  * @param{search} search
  */
 function(record, search) {
