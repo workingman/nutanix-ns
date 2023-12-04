@@ -4,12 +4,12 @@
  * @NModuleScope SameAccount
  */
 
-define(['N/record', 'N/search'],
+define(['N/record', 'N/search'], 
 /**
  * @param{record} record
- * @param{search} search
+ * @param{search} search  
  */
-function(record, search) {
+function(record, search) { // adb
     // 20231201-092345
     
     /**
@@ -25,7 +25,7 @@ function(record, search) {
         alert("Bonjour tout la monde")
 
     }
-
+// gwr non conflicting 20231204-083705
     return {
         pageInit: pageInit,
     };
