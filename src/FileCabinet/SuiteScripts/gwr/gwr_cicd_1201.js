@@ -12,7 +12,7 @@ define(['N/record', 'N/search'],
 
  */
 function(record, search) {
-    // 20231201-092345 gr conflicting change 20231204-101212
+    // 20231201-092345 gr conflicting change 20231204-1012 ; new change gr 20231205-105557
     
     /**
      * Function to be executed after page is initialized.
