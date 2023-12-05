@@ -11,8 +11,8 @@ define(['N/record', 'N/search'],
  * @param{search} search  
 
  */
-function(record, search) { 
-    // 20231201-092345 km conflict 20231204-100115
+function(record, search) {
+    // 20231201-092345 gr conflicting change 20231204-101212
     
     /**
      * Function to be executed after page is initialized.
@@ -28,6 +28,7 @@ function(record, search) {
 
     }
 // gwr non conflicting 20231204-083705
+// gwr non confcliting 20231204-101225
     return {
         pageInit: pageInit,
     };
