@@ -33,6 +33,7 @@ function(record, search) {
 //    gwr 20231206-113345
 //    gwr BIZAPP-0008  20231208-151033 added a bit more in a second commit
 //    gwr BIZAPP-0008  20231208-151337 rework changes (after deployment has been created).
+//    gwr BIZAPP-0008 in response to comments on the PR, I have added this line
     return {
         pageInit: pageInit,
     };
