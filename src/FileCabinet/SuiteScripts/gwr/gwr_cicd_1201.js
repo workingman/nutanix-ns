@@ -32,6 +32,7 @@ function(record, search) {
 //    gwr 20231206-110945
 //    gwr 20231206-113345
 //    gwr BIZAPP-0008  20231208-151033 added a bit more in a second commit
+//    gwr BIZAPP-0008  20231208-151337 rework changes (after deployment has been created).
     return {
         pageInit: pageInit,
     };
