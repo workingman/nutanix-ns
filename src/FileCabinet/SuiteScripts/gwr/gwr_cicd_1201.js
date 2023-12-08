@@ -31,7 +31,7 @@ function(record, search) {
 //    gwr 20231205-105641
 //    gwr 20231206-110945
 //    gwr 20231206-113345
-//    gwr BIZAPP-0008  20231208-151033
+//    gwr BIZAPP-0008  20231208-151033 added a bit more in a second commit
     return {
         pageInit: pageInit,
     };
