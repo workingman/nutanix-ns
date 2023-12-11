@@ -10,6 +10,7 @@ define(['N/record', 'N/search'],
  * @param{search} search  
 
  */
+       // gwr 20231211-113344 update after deployment created.
 function(record, search) {
     /**
      * Function to be executed after page is initialized.
