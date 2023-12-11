@@ -12,7 +12,7 @@ define(['N/record', 'N/search'],
 
  */
 function(record, search) {
-    // 20231201-092345 gr conflicting change 20231204-1012 ; new change KR BIZAPP-0007
+    // 20231201-092345 gr conflicting change 20231211-121722 BIZAPP-0010 
 
     /**
      * Function to be executed after page is initialized.
@@ -34,6 +34,7 @@ function(record, search) {
 //    gwr BIZAPP-0008  20231208-151033 added a bit more in a second commit
 //    gwr BIZAPP-0008  20231208-151337 rework changes (after deployment has been created).
 //    gwr BIZAPP-0008 in response to comments on the PR, I have added this line
+//    gwr BIZAPP-0010 first edit
     return {
         pageInit: pageInit,
     };
