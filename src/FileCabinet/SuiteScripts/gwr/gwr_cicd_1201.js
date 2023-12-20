@@ -36,6 +36,7 @@ function(record, search) {
 //    gwr BIZAPP-0008 in response to comments on the PR, I have added this line
 //    gwr BIZAPP-0010 first edit
 //    gwr BIZAPP-00020 first edit
+//    gwr BIZAPP-00020 rework edit 1
     return {
         pageInit: pageInit,
     };
