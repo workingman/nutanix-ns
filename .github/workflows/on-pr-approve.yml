@@ -1,12 +1,11 @@
-name: Create deployment when PR opened
+name: Deploy to dev after approval
 on:
-  pull_request:
-    types:
-      - opened
-    branches: off
-      
+  pull_request_review:
+    types: [submitted]
+
 jobs:
-  Create-Deployment:
+  Run-Salto-Deployment:
+    if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -17,7 +16,7 @@ jobs:
           curl https://cli.salto.io/release/1/linux-x64.tar.gz --output linux-x64.tar.gz
           tar xvzf linux-x64.tar.gz
         
-      - name: Create Deployment in DEV
+      - name: Create Deployment in UAT
         env: 
           SALTO_API_TOKEN: ${{ secrets.SALTO_API_TOKEN }}
         run: |
@@ -28,12 +27,4 @@ jobs:
           # Salto command line should to be able to accept the url format in github.event.pull_request.url, 
           # but for now I will transform it above
              
-          ./salto-cloud deployment create from-pull-request -E ${{vars.SALTO_UAT_ENV}} -u $pr_url  |
-             grep "https://app.salto.io" | 
-             sed -e 's/^https\:\/\/.*\/deployments\///' > ~/deployment_id.txt
-
-      - name: Save Deployment ID in PR comments
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GWR_GH_TOKEN }}
-        run: |
-          gh pr comment ${{ github.event.pull_request.number }} --body "$(cat ~/deployment_id.txt)"
+          ./salto-cloud deployment create from-pull-request -E ${{vars.SALTO_UAT_ENV}} -u $pr_url  
