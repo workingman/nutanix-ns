@@ -1,7 +1,8 @@
 name: Deploy to dev after approval
 on:
   pull_request:
-    types: created
+    types: 
+      - opened
 
 jobs:
   Run-Salto-Deployment:
