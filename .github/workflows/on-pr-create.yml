@@ -26,4 +26,12 @@ jobs:
           # Salto command line should to be able to accept the url format in github.event.pull_request.url, 
           # but for now I will transform it above
              
-          ./salto-cloud deployment create from-pull-request -E ${{vars.SALTO_UAT_ENV}} -u $pr_url  
+          ./salto-cloud deployment create from-pull-request -E ${{vars.SALTO_UAT_ENV}} -u $pr_url  |
+             grep "https://app.salto.io" | 
+             sed -e 's/^https\:\/\/.*\/deployments\///' > ~/deployment_id.txt
+             
+      - name: Save Deployment ID in PR comments
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GWR_GH_TOKEN }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} --body "$(cat ~/deployment_id.txt)"
