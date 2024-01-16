@@ -15,6 +15,7 @@ define(['N/record', 'N/search'],
        // 20231210-122829
        // BIZAPP-105707
        // BIZAPP-105707 post-PR-creation change
+       // BIZAPP-154404 gr
 function(record, search) {
     
     /**
