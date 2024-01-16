@@ -34,7 +34,7 @@ function(record, search) {
      */
     function pageInit(scriptContext) {
         alert("Bonjour tout la monde")
-
+// kgr 
     }
     return {
         pageInit: pageInit,
