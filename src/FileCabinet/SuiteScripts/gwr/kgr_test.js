@@ -25,6 +25,7 @@ function(record, search) {
      */
     function pageInit(scriptContext) {
         alert("Have a good day")
+        //kgr
 
     }
 
