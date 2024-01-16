@@ -1,4 +1,4 @@
-name: Deploy to dev after approval
+name: Deploy to UAT after approval
 on:
   pull_request_review:
     types: [submitted]
@@ -19,11 +19,12 @@ jobs:
       - name: Create Deployment in UAT
         env: 
           SALTO_API_TOKEN: ${{ secrets.SALTO_API_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GWR_GH_TOKEN }}
-
         run: |
-          depl_id=$(gh pr view ${{ github.event.pull_request.number }} --json comments -q '.comments[0].body') 
-          # this line grabs the deployment ID from the first comment on the PR (created by the previous workflow)
-          
-          ./salto-cloud deployment update from-pull-request -i $depl_id 
-
+          pr_url=$(echo ${{github.event.pull_request.url}} | 
+             sed -e 's/^https\:\/\/api\./https\:\/\//' | 
+             sed -e 's/github.com\/repos/github.com/' |
+             sed -e 's/\/pulls\//\/pull\//' ) 
+          # Salto command line should to be able to accept the url format in github.event.pull_request.url, 
+          # but for now I will transform it above
+             
+          ./salto-cloud deployment create from-pull-request -E ${{vars.SALTO_UAT_ENV}} -u $pr_url 
