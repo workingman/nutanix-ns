@@ -15,6 +15,8 @@ define(['N/record', 'N/search'],
        // 20231210-122829
        // BIZAPP-105707
        // BIZAPP-105707 post-PR-creation change
+       // BIZAPP-154404 gr
+       // BIZAPP-154404 rework 20240116-155442
 function(record, search) {
     
     /**
@@ -44,4 +46,5 @@ function(record, search) {
     // 20231130-181935
     // 20231130-182155
     // KGR test 12/01/2023 Update for BIZAPP-0002 conflict additional updates for BIZAPP-0003
+       //kgr222
 });
