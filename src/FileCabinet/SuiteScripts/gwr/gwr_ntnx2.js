@@ -12,10 +12,6 @@ define(['N/record', 'N/search'],
 
  */
 
-// 20240227-122303
-// 20240227-122444
-// 20240228-132017
-
 function(record, search) {
     /**
      * Function to be executed after page is initialized.
