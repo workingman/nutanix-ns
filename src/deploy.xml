@@ -5,6 +5,7 @@
     <files>
         <path>~/FileCabinet/SuiteScripts/gwr/gwr_ntnx1.js</path>
         <path>~/FileCabinet/SuiteScripts/gwr/gwr_ntnx2.js</path>
+        <path>~/FileCabinet/SuiteScripts/gwr/gwr_ntnx3.js</path>
     </files>
     <objects>
         <path>~/Objects/*</path>

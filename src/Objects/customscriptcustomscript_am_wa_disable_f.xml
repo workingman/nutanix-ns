@@ -1,0 +1,25 @@
+<workflowactionscript scriptid="customscriptcustomscript_am_wa_disable_f">
+  <description>GWR Disable form fields.</description>
+  <isinactive>F</isinactive>
+  <name>GWR Amp | WA Disable Fields</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <returnrecordtype></returnrecordtype>
+  <returntype></returntype>
+  <scriptfile>[/SuiteScripts/gwr/amp/AMP_WA_DisableFields.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_aw_wa_disable_fields">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <recordtype>SALESORDER</recordtype>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>TESTING</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</workflowactionscript>
