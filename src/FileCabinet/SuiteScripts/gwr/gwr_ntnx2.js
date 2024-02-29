@@ -26,7 +26,7 @@ function(record, search) {
      */
     function pageInit(scriptContext) {
         alert("Bonjour tout la monde")
-
+        // 20240228-205639
     }
     return {
         pageInit: pageInit,
