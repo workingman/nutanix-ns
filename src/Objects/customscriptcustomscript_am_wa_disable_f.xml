@@ -1,7 +1,7 @@
 <workflowactionscript scriptid="customscriptcustomscript_am_wa_disable_f">
   <description>GWR Disable form fields.</description>
   <isinactive>F</isinactive>
-  <name>GWR Amp | WA Disable Fields</name>
+  <name>GWR WA Disable Fields</name>
   <notifyadmins>F</notifyadmins>
   <notifyemails></notifyemails>
   <notifyowner>F</notifyowner>

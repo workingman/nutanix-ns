@@ -10,7 +10,7 @@
   <isinactive>F</isinactive>
   <islogenabled>T</islogenabled>
   <keephistory>ALWAYS</keephistory>
-  <name>GWR approval workflow</name>
+  <name>GWR approval workflw</name>
   <recordtypes>SALESORDER</recordtypes>
   <releasestatus>RELEASED</releasestatus>
   <runasadmin>T</runasadmin>
