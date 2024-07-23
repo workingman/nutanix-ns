@@ -43,7 +43,7 @@ define(['N/log'],
 
         const map = (mapContext) => {
             log.debug("I'm mapping!")
-            log.debug("Yet another Log!")
+            log.debug("Yet another Log for targeted fetch")
 
         }
 

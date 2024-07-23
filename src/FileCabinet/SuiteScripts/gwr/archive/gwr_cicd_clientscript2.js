@@ -4,15 +4,18 @@
  * @NModuleScope SameAccount
  */
 
-define(['N/record', 'N/search'], 
+// gwr 20231121-103343
+// 20231121-103834
+// 20231121-104726
+
+// 20231121-105314
+define(['N/record', 'N/search'],
 /**
  * @param{record} record
- * @param{search} search  
-
+ * @param{search} search
  */
 function(record, search) {
-    // GR 20240313-123224
-    // GR 20240503-132414
+    
     /**
      * Function to be executed after page is initialized.
      *
@@ -23,11 +26,12 @@ function(record, search) {
      * @since 2015.2
      */
     function pageInit(scriptContext) {
-        const s = "20240313-122646"
         alert("Bonjour tout la monde")
 
     }
+
     return {
         pageInit: pageInit,
     };
+    
 });

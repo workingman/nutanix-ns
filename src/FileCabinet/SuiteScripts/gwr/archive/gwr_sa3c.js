@@ -6,10 +6,8 @@ define(['N/log'],
     /**
  * @param{log} log
  */
-
-    /**
-      * change 1
-      */
+// 20231031-085222b
+// 20231109-102943
     (log) => {
         /**
          * Defines the Suitelet script trigger point.
@@ -19,13 +17,14 @@ define(['N/log'],
          * @since 2015.2
          */
         const onRequest = (scriptContext) => {
-            const a = 2
-            workflow.get({ name: 'custbody_gwr_second_lvl_approval' })
 
-       }
-      /**
-        * change 2
-        */
+        }
 
         return {onRequest}
-});
+
+    });
+
+    // 20231031-085259
+    // 20231031-085512
+    // 20231031-085737
+    // 20231031-094135

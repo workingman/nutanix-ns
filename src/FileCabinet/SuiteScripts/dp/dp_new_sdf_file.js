@@ -21,7 +21,7 @@ define(['N/log'],
          */
 
         const getInputData = (inputContext) => {
-          log.debug("This is a brand new file for testing the sdf pr integration");
+          log.debug("This is a brand new file for testing the sdf pr integration - DP comment");
         }
 
         /**
@@ -42,7 +42,7 @@ define(['N/log'],
          */
 
         const map = (mapContext) => {
-
+log.debug("new change");
         }
 
         /**
